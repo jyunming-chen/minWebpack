@@ -1,4 +1,4 @@
-import { MeshText2D, textAlign } from '@kinyoklion/three-text2d/dist/three-text2d.js';
+import { SpriteText2D, MeshText2D, textAlign } from '@kinyoklion/three-text2d/dist/three-text2d.js';
 import * as THREE from 'three';
 
 import {scene} from './main-3';
@@ -10,8 +10,8 @@ function buildScene() {
    scene.add (box);
 
 
-   let text = new MeshText2D("RIGHT", { align: textAlign.right, font: '30px Arial',
-                            fillStyle: '#000000', antialias: true });
+   let text = new SpriteText2D("RIGHT", { align: textAlign.right, font: '30px Arial',
+                            fillStyle: '#00FFFF', antialias: true });
    scene.add(text);
 }
 
